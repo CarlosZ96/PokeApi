@@ -14,10 +14,14 @@ const Api = () => {
   }
 
   useEffect(() => {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonNumber}/`)
-      .then(result => result.json())
-      .then(data => setPokemonName(data.name))
+    SearchPokemon(pokemonNumber)
   });
+
+ let SearchPokemon = async pokemonNumber =>{
+   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonNumber}/`)
+   const data = await response.json();
+   setPokemonName(data.name);
+ }
 
   return (
     <div className="shit-container">
