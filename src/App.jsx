@@ -1,10 +1,11 @@
 import './App.css';
-import Conter from './conter';
+import React from 'react';
+import ShopCart from './components/Shop';
 
 function App() {
   return (
     <div className="App">
-      <Conter />
+     <ShopCart/>
     </div>
   );
 }
