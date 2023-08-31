@@ -1,5 +1,5 @@
 export const TYPES = {
-  AddToCart: 'Add-to-Cart',
+  AddToCart: 'AddtoCart',
   RomoveOne: 'RomoveOne',
   RemoveAll: 'RemoveAll',
   ClearCart: 'ClearCart',
